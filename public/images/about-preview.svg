@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Placeholder about image">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6C63FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#F9A826" stop-opacity="0.22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1100" fill="#ffffff"/>
+  <rect x="70" y="70" width="1460" height="960" rx="56" fill="url(#g2)"/>
+  <g fill="#1F2937" fill-opacity="0.14">
+    <rect x="170" y="240" width="520" height="120" rx="26"/>
+    <rect x="170" y="400" width="820" height="80" rx="20"/>
+    <rect x="170" y="520" width="720" height="80" rx="20"/>
+    <rect x="170" y="640" width="640" height="80" rx="20"/>
+    <circle cx="1220" cy="520" r="240"/>
+  </g>
+  <g fill="#1F2937" fill-opacity="0.65">
+    <text x="170" y="180" font-family="ui-sans-serif, system-ui, -apple-system" font-size="40" font-weight="700">Story &amp; mission image</text>
+    <text x="170" y="225" font-family="ui-sans-serif, system-ui, -apple-system" font-size="22" font-weight="500" fill-opacity="0.55">Swap with a real photo of teachers &amp; students</text>
+  </g>
+</svg>
+

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder UPI QR">
+  <rect width="1200" height="900" fill="#ffffff"/>
+  <rect x="60" y="60" width="1080" height="780" rx="40" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="6"/>
+  <g fill="#1F2937" fill-opacity="0.08">
+    <rect x="160" y="160" width="220" height="220" rx="16"/>
+    <rect x="820" y="160" width="220" height="220" rx="16"/>
+    <rect x="160" y="520" width="220" height="220" rx="16"/>
+    <rect x="820" y="520" width="220" height="220" rx="16"/>
+    <rect x="450" y="300" width="300" height="300" rx="24"/>
+  </g>
+  <g fill="#1F2937" fill-opacity="0.65">
+    <text x="160" y="120" font-family="ui-sans-serif, system-ui, -apple-system" font-size="32" font-weight="700">UPI QR (placeholder)</text>
+    <text x="160" y="860" font-family="ui-sans-serif, system-ui, -apple-system" font-size="20" font-weight="500" fill-opacity="0.55">Replace with real QR linked to your UPI ID</text>
+  </g>
+</svg>
+

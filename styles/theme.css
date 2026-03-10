@@ -1,0 +1,65 @@
+:root {
+  /* Brand palette (matched to the colorful logo) */
+  --brand-red: 0 86% 58%;
+  --brand-orange: 24 95% 53%;
+  --brand-yellow: 43 96% 56%;
+  --brand-green: 142 71% 45%;
+  --brand-blue: 214 90% 55%;
+  --brand-purple: 262 83% 58%;
+
+  /* Neutral background/text (requested) */
+  --neutral-bg: 220 20% 98%; /* #F9FAFB */
+  --neutral-text: 215 28% 17%; /* #1F2937 */
+
+  /* shadcn-style tokens */
+  --background: var(--neutral-bg);
+  --foreground: var(--neutral-text);
+
+  --card: 0 0% 100%;
+  --card-foreground: var(--neutral-text);
+
+  --popover: 0 0% 100%;
+  --popover-foreground: var(--neutral-text);
+
+  /* Keep UI usable: choose one primary, but allow rainbow accents */
+  --primary: var(--brand-blue);
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: var(--brand-yellow);
+  --secondary-foreground: 222 47% 11%;
+
+  --muted: 220 14% 96%;
+  --muted-foreground: 215 16% 47%;
+
+  --accent: 214 100% 96%;
+  --accent-foreground: 222 47% 11%;
+
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: var(--brand-blue);
+
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 222 47% 7%;
+  --foreground: 210 40% 98%;
+
+  --card: 222 47% 9%;
+  --card-foreground: 210 40% 98%;
+
+  --popover: 222 47% 9%;
+  --popover-foreground: 210 40% 98%;
+
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+
+  --accent: 217 33% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --border: 217 33% 18%;
+  --input: 217 33% 18%;
+}
