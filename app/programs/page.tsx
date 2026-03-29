@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
 import { BookOpen, Activity, HeartHandshake, Users } from "lucide-react";
+import { siteImages } from "@/lib/gallery-images";
 
 export const metadata = {
   title: "Programs",
@@ -20,8 +21,7 @@ const programs = [
       "Individualized Education Programs (IEPs) tailored to the unique learning style, pace, and abilities of each child. We focus on foundational academics, cognitive development, and communication.",
     impact:
       "Improves cognitive abilities, basic literacy, and numeral skills, fostering a love for continuous learning.",
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
+    image: siteImages.programs.specialEducation,
   },
   {
     id: "life-skills",
@@ -33,8 +33,7 @@ const programs = [
       "Practical training focused on daily living activities. Students learn personal hygiene, money management, basic cooking, and self-care routines to build self-reliance.",
     impact:
       "Enhances personal independence, builds self-esteem, and prepares older adolescents for vocational opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&q=80&w=800",
+    image: siteImages.programs.lifeSkills,
   },
   {
     id: "therapy",
@@ -46,8 +45,7 @@ const programs = [
       "Comprehensive therapeutic interventions including Speech Therapy, Occupational Therapy, and Physiotherapy provided by certified professionals in equipped environments.",
     impact:
       "Improves speech clarity, motor skills, sensory processing, and emotional regulation.",
-    image:
-      "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800",
+    image: siteImages.programs.therapy,
   },
   {
     id: "community",
@@ -59,8 +57,7 @@ const programs = [
       "Organized social events, field trips, and integration activities that encourage interaction between our students and the broader community, breaking down social barriers.",
     impact:
       "Fosters social skills, reduces stigma, and builds a supportive, inclusive local network.",
-    image:
-      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=800",
+    image: siteImages.programs.community,
   },
 ];
 

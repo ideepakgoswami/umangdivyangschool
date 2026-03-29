@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Link from "next/link";
 import "./globals.css";
 
+import { FloatingDonateButton } from "@/components/site/floating-donate-button";
 import { Footer } from "@/components/site/footer";
 import { Navbar } from "@/components/site/navbar";
+import { Preloader } from "@/components/site/preloader";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,6 +40,11 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
   },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
@@ -56,24 +61,14 @@ export default function RootLayout({
           "min-h-dvh font-sans antialiased",
         )}
       >
+        <Preloader />
         <Navbar />
         <main id="main-content" className="flex-1">
           {children}
         </main>
         <Footer />
 
-        {/* Floating Donate Button */}
-        <div
-          className="fixed bottom-6 right-6 z-50 md:bottom-10 md:right-10 animate-bounce"
-          style={{ animationDuration: "3s" }}
-        >
-          <Button
-            asChild
-            className="rounded-full shadow-2xl bg-brand-orange hover:bg-brand-orange/90 text-white px-8 py-4 h-auto text-lg font-bold flex items-center gap-2 hover:scale-105 transition-transform border-4 border-white"
-          >
-            <Link href="/donate">❤️ Donate Now</Link>
-          </Button>
-        </div>
+        <FloatingDonateButton />
       </body>
     </html>
   );

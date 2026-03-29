@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/site/section";
+import { siteImages } from "@/lib/gallery-images";
 
 export function AboutPreview() {
   return (
@@ -32,7 +33,7 @@ export function AboutPreview() {
         <div className="order-1 lg:order-2">
           <div className="overflow-hidden rounded-3xl border bg-card shadow-sm">
             <Image
-              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=1200"
+              src={siteImages.aboutPreview}
               alt="A teacher supporting a child with a learning activity"
               width={1200}
               height={900}

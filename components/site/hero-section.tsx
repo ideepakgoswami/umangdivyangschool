@@ -5,6 +5,8 @@ import { ArrowRight, Heart, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
+import heroPhoto from "../../public/gallery/Events/IMG20250812130217.jpg";
+
 export function HeroSection() {
   return (
     <section className="relative flex h-[calc(100vh-80px)] min-h-[600px] w-full items-center justify-center overflow-hidden bg-amber-50/50">
@@ -78,43 +80,13 @@ export function HeroSection() {
             {/* Main Image with organic border radius */}
             <div className="relative w-full max-w-[450px] aspect-[4/5] rounded-[3rem] lg:rounded-[5rem] rounded-tr-[10rem] overflow-hidden shadow-2xl shadow-brand-blue/20 border-8 border-white z-10 hover:scale-[1.02] transition-transform duration-500">
               <Image
-                src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1200"
-                alt="Teacher assisting a special child in a supportive classroom"
+                src={heroPhoto}
+                alt="Students and educators during an activity at Umang Divyang School"
                 fill
                 priority
+                sizes="(max-width: 1024px) 100vw, 450px"
                 className="object-cover object-center"
               />
-            </div>
-
-            {/* Floating Elements */}
-            <div
-              className="absolute -left-4 top-1/4 bg-white p-4 rounded-2xl shadow-xl z-20 animate-bounce"
-              style={{ animationDuration: "3s" }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-brand-green/20 flex items-center justify-center">
-                  <span className="text-2xl">🌱</span>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-slate-800">Growth</p>
-                  <p className="text-xs text-slate-500">Every single day</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="absolute -right-4 bottom-1/4 bg-white p-4 rounded-2xl shadow-xl z-20 animate-bounce"
-              style={{ animationDuration: "4s" }}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-brand-yellow/20 flex items-center justify-center">
-                  <span className="text-2xl">⭐</span>
-                </div>
-                <div>
-                  <p className="text-sm font-bold text-slate-800">Potential</p>
-                  <p className="text-xs text-slate-500">Unlocking futures</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

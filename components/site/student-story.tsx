@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
+import { siteImages } from "@/lib/gallery-images";
 
 export function StudentStory() {
   return (
@@ -15,7 +16,7 @@ export function StudentStory() {
               {/* Main Image Container */}
               <div className="relative aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-[2rem] shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&q=80&w=1200"
+                  src={siteImages.studentStory}
                   alt="Children learning and engaging in activities at the school"
                   fill
                   className="object-cover"

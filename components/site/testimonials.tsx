@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Quote } from "lucide-react";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
+import { siteImages } from "@/lib/gallery-images";
 
 const testimonials = [
   {
@@ -11,8 +12,7 @@ const testimonials = [
       "Umang helped our child gain confidence and communication skills we never imagined possible. The dedicated teachers and supportive environment made all the difference.",
     parent: "Priya Sharma",
     childAge: "Mother of Siya",
-    image:
-      "https://images.unsplash.com/photo-1544717301-9cdcb1f5940f?auto=format&fit=crop&q=80&w=200",
+    image: siteImages.testimonials[0],
     color: "border-brand-blue",
     quoteColor: "text-brand-blue/40",
     offset: "lg:translate-y-4",
@@ -22,8 +22,7 @@ const testimonials = [
       "Finding a school that truly understands neurodiversity was a blessing. The personalized attention our son receives has transformed his daily life.",
     parent: "Rajesh Kumar",
     childAge: "Father of Rohan",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=200",
+    image: siteImages.testimonials[1],
     color: "border-brand-yellow",
     quoteColor: "text-brand-yellow/50",
     offset: "lg:-translate-y-4",
@@ -33,8 +32,7 @@ const testimonials = [
       "The life-skills training has helped my child become more independent at home. We are grateful for the caring community at Umang.",
     parent: "Anita Desai",
     childAge: "Mother of Aryan",
-    image:
-      "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&q=80&w=200",
+    image: siteImages.testimonials[2],
     color: "border-brand-green",
     quoteColor: "text-brand-green/40",
     offset: "lg:translate-y-4",

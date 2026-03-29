@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, ExternalLink } from "lucide-react";
 
@@ -5,6 +6,11 @@ import { siteConfig } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Section } from "@/components/site/section";
+import { galleryPhotos } from "@/lib/gallery-images";
+
+const instagramHighlightPhotos = galleryPhotos
+  .filter((p) => !p.src.endsWith(".svg") && p.category !== "Team")
+  .slice(0, 6);
 
 export function SocialMediaPreview() {
   return (
@@ -29,24 +35,28 @@ export function SocialMediaPreview() {
           </CardHeader>
           <CardContent>
             <div className="grid gap-3 sm:grid-cols-3">
-              {Array.from({ length: 6 }).map((_, i) => (
+              {instagramHighlightPhotos.map((photo) => (
                 <a
-                  key={i}
+                  key={photo.src}
                   href={siteConfig.social.instagram}
                   target="_blank"
                   rel="noreferrer"
-                  className="group aspect-square rounded-xl border bg-background transition hover:-translate-y-0.5 hover:shadow-sm focus-visible:focus-ring"
-                  aria-label="View Instagram post preview"
+                  className="group relative aspect-square overflow-hidden rounded-xl border bg-background transition hover:-translate-y-0.5 hover:shadow-sm focus-visible:focus-ring"
+                  aria-label="View school photos on Instagram"
                 >
-                  <div className="grid h-full place-items-center text-xs text-muted-foreground">
-                    Post {i + 1}
-                  </div>
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    sizes="(max-width: 640px) 33vw, 120px"
+                    className="object-cover transition duration-300 group-hover:scale-105"
+                  />
                 </a>
               ))}
             </div>
             <p className="mt-3 text-xs text-muted-foreground">
-              Replace this preview with a real feed integration later (e.g.,
-              curated posts).
+              Curated photos from our programs; follow us on Instagram for the
+              latest moments.
             </p>
           </CardContent>
         </Card>
