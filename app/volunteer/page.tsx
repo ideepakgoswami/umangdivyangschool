@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
 import { Button } from "@/components/ui/button";
+import { siteImages } from "@/lib/gallery-images";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -96,8 +97,8 @@ export default function VolunteerPage() {
                 </p>
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mt-auto hidden md:block">
                   <Image
-                    src="https://images.unsplash.com/photo-1593113563332-6142713f01c7?auto=format&fit=crop&q=80&w=800"
-                    alt="Volunteers"
+                    src={siteImages.volunteer}
+                    alt="Volunteers and school community at Umang Divyang School"
                     fill
                     className="object-cover opacity-90"
                   />

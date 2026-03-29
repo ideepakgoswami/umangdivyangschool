@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
 import { Heart, Target, History } from "lucide-react";
+import { siteImages } from "@/lib/gallery-images";
 
 export const metadata = {
   title: "About Us",
@@ -55,8 +56,8 @@ export default function AboutPage() {
             <FadeIn delay={0.2}>
               <div className="relative aspect-[4/3] rounded-[2rem] overflow-hidden shadow-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?auto=format&fit=crop&q=80&w=1200"
-                  alt="Children learning"
+                  src={siteImages.aboutMission}
+                  alt="Children learning at Umang Divyang School"
                   fill
                   className="object-cover"
                 />
@@ -111,14 +112,19 @@ export default function AboutPage() {
                 could ever ask for.&quot;
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-white font-bold text-xl">
-                  F
+                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full ring-2 ring-brand-blue/20">
+                  <Image
+                    src={siteImages.founder}
+                    alt="Javed Akhtar, Founder"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 text-lg">
-                    Dr. Ananya Sharma
+                    Javed Akhtar
                   </h4>
-                  <p className="text-slate-500">Founder & Director</p>
+                  <p className="text-slate-500">Founder</p>
                 </div>
               </div>
             </div>

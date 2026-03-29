@@ -4,6 +4,7 @@ import { ArrowRight, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/site/section";
 import { FadeIn } from "@/components/site/fade-in";
+import { siteImages } from "@/lib/gallery-images";
 
 export function VolunteerSection() {
   return (
@@ -47,8 +48,8 @@ export function VolunteerSection() {
 
             <div className="relative aspect-[4/3] lg:aspect-[4/3] overflow-hidden rounded-[2rem] bg-slate-800 shadow-2xl ring-1 ring-white/10">
               <Image
-                src="https://images.unsplash.com/photo-1593113563332-6142713f01c7?auto=format&fit=crop&q=80&w=1200"
-                alt="Volunteers helping children"
+                src={siteImages.volunteer}
+                alt="School community event at Umang Divyang School"
                 fill
                 className="object-cover opacity-90 transition-opacity hover:opacity-100"
               />
